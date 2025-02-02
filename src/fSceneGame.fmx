@@ -1,0 +1,151 @@
+inherited GameScene: TGameScene
+  HitTest = False
+  Size.Width = 770.000000000000000000
+  Size.Height = 504.000000000000000000
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Top
+    HitTest = False
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Margins.Bottom = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 730.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = zScore
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = zNbLives
+        Row = 0
+      end>
+    RowCollection = <
+      item
+        Value = 100.000000000000000000
+      end>
+    object zScore: TLayout
+      Align = HorzCenter
+      Position.X = 82.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object imgScore: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = MostLeft
+        Margins.Right = 20.000000000000000000
+      end
+      inline tiScore: TOlfFMXTextImageFrame
+        Align = Left
+        HitTest = False
+        Position.X = 70.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+    end
+    object zNbLives: TLayout
+      Align = HorzCenter
+      Position.X = 447.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object imgNbLives: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = MostLeft
+        Margins.Right = 20.000000000000000000
+      end
+      inline tiNbLives: TOlfFMXTextImageFrame
+        Align = Left
+        HitTest = False
+        Position.X = 70.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object ShadowEffect2: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+    end
+  end
+  object Layout3: TLayout
+    Align = Contents
+    Size.Width = 770.000000000000000000
+    Size.Height = 504.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Layout4: TLayout
+      Align = Right
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 700.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 464.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      inline btnPause: TTextButton
+        Align = Top
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = btnPauseClick
+        inherited rFocused: TRectangle
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+        end
+        inherited rUp: TRectangle
+          Size.Width = 46.000000000000000000
+          Size.Height = 46.000000000000000000
+        end
+        inherited rDown: TRectangle
+          Size.Width = 46.000000000000000000
+          Size.Height = 46.000000000000000000
+        end
+        inherited Text1: TText
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+        end
+      end
+    end
+  end
+  object UpdateScore: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = UpdateScoreTimer
+    Left = 368
+    Top = 240
+  end
+end
