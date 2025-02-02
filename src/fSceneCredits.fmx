@@ -1,0 +1,113 @@
+inherited CreditsScene: TCreditsScene
+  Size.Width = 780.000000000000000000
+  Size.Height = 567.000000000000000000
+  OnResized = FrameResized
+  object zFooter: TLayout
+    Align = Bottom
+    Margins.Left = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Margins.Bottom = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 497.000000000000000000
+    Size.Width = 740.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    inline btnExit: TTextButton
+      Align = Center
+      Size.Width = 200.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnExitClick
+      inherited rFocused: TRectangle
+        Size.Height = 50.000000000000000000
+      end
+      inherited rUp: TRectangle
+        Size.Height = 46.000000000000000000
+      end
+      inherited rDown: TRectangle
+        Size.Height = 46.000000000000000000
+      end
+      inherited Text1: TText
+        Size.Height = 50.000000000000000000
+      end
+    end
+  end
+  object zHeader: TLayout
+    Align = Top
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 740.000000000000000000
+    Size.Height = 75.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    inline tiTitle: TOlfFMXTextImageFrame
+      Align = Center
+      HitTest = False
+      Size.Width = 320.000000000000000000
+      Size.Height = 75.000000000000000000
+      Size.PlatformDefault = False
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+    end
+  end
+  object zContent: TLayout
+    Align = Client
+    Margins.Top = 20.000000000000000000
+    Margins.Bottom = 20.000000000000000000
+    Size.Width = 780.000000000000000000
+    Size.Height = 362.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Rectangle1: TRectangle
+      Align = Contents
+      Fill.Color = claBlue
+      HitTest = False
+      Opacity = 0.800000011920928900
+      Size.Width = 780.000000000000000000
+      Size.Height = 362.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 20.000000000000000000
+      YRadius = 20.000000000000000000
+    end
+    object VertScrollBox1: TVertScrollBox
+      Align = Client
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Size.Width = 740.000000000000000000
+      Size.Height = 322.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Viewport.Width = 740.000000000000000000
+      Viewport.Height = 322.000000000000000000
+      object Text1: TText
+        Align = Top
+        AutoSize = True
+        HitTest = False
+        Size.Width = 740.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claDarkturquoise
+        TextSettings.HorzAlign = Leading
+        object ShadowEffect2: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.600000023841857900
+          ShadowColor = claBlack
+        end
+      end
+    end
+  end
+end
