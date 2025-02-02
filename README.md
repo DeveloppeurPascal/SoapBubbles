@@ -8,7 +8,7 @@ The bubbles grow by joining with the ones they touch until they explode. You hav
 
 The game can be played with a mouse and finger or stylus on a touch-sensitive device.
 
-The initial version of the game was developed following an example coded for the Delphi FMX Game Snippets project in April 2021 and subsequently evolved to be integrated into a project using the Gamolf FMX Game Starter kit since 2025.
+The initial version of the game was developed following an example coded for the [Delphi FMX Game Snippets](https://fmxgamesnippets.developpeur-pascal.fr/) project in April 2021 and subsequently evolved to be integrated into a project using the [Gamolf FMX Game Starter Kit](https://fmxgamestarterkit.developpeur-pascal.fr/) since 2025.
 
 This code repository contains a project developed in Object Pascal language under Delphi. You don't know what Delphi is and where to download it ? You'll learn more [on this web site](https://delphi-resources.developpeur-pascal.fr/).
 

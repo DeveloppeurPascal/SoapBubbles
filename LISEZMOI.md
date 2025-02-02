@@ -8,7 +8,7 @@ Les bulles grossissent en s'assemblant à celles qu'elles touchent jusqu'à expl
 
 On peut y jouer à la souris et au doigt ou stylet sur un appareil tactile.
 
-La version de départ du jeu a été développée suite à un exemple codé pour le projet Delphi FMX Game Snippets en avril 2021 et a évolué ensuite pour être intégrée à un projet utilisant Gamolf FMX Game Starter kit depuis 2025.
+La version de départ du jeu a été développée suite à un exemple codé pour le projet [Delphi FMX Game Snippets](https://fmxgamesnippets.developpeur-pascal.fr/) en avril 2021 et a évolué ensuite pour être intégrée à un projet utilisant [Gamolf FMX Game Starter Kit](https://fmxgamestarterkit.developpeur-pascal.fr/) depuis 2025.
 
 Ce dépôt de code contient un projet développé en langage Pascal Objet sous Delphi. Vous ne savez pas ce qu'est Dephi ni où le télécharger ? Vous en saurez plus [sur ce site web](https://delphi-resources.developpeur-pascal.fr/).
 
