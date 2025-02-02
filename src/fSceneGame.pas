@@ -1,3 +1,40 @@
+/// <summary>
+/// ***************************************************************************
+///
+/// Soap Bubbles
+///
+/// Copyright 2021-2025 Patrick Prémartin under AGPL 3.0 license.
+///
+/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+/// DEALINGS IN THE SOFTWARE.
+///
+/// ***************************************************************************
+///
+/// A game with bubbles to explode before they explode on their own on the
+/// screen.
+///
+/// ***************************************************************************
+///
+/// Author(s) :
+/// Patrick PREMARTIN
+///
+/// Site :
+/// https://soapbubbles.gamolf.fr/
+///
+/// Project site :
+/// https://github.com/DeveloppeurPascal/SoapBubbles
+///
+/// ***************************************************************************
+/// File last update : 2025-02-02T19:53:10.000+01:00
+/// Signature : ad6755e6978009c474a0b1ba023c8881cc1c3c09
+/// ***************************************************************************
+/// </summary>
+
 unit fSceneGame;
 
 interface
@@ -72,8 +109,11 @@ uses
 
 procedure TGameScene.btnPauseClick(Sender: TObject);
 begin
-  TGameData.DefaultGameData.PauseGame;
-  TScene.Current := TSceneType.Home;
+  // TGameData.DefaultGameData.PauseGame;
+  // TScene.Current := TSceneType.Home;
+  // TODO : réactiver le HOME/Pause quand on gèrera les mise en pause de parties
+  TGameData.DefaultGameData.StopGame;
+  TScene.Current := TSceneType.gameover;
 end;
 
 procedure TGameScene.DoNbLivesChanged(const Sender: TObject;
@@ -126,7 +166,7 @@ begin
     if Value < 1 then
     begin
       TGameData.DefaultGameData.StopGame;
-      TScene.Current := TSceneType.GameOver;
+      TScene.Current := TSceneType.gameover;
     end
     else
       FlashRect(talphacolors.red); // TODO : play a "dead" song

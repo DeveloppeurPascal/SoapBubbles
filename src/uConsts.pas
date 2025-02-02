@@ -1,9 +1,9 @@
 ﻿/// <summary>
 /// ***************************************************************************
 ///
-/// Gamolf FMX Game Starter Kit
+/// Soap Bubbles
 ///
-/// Copyright 2024-2025 Patrick Prémartin under AGPL 3.0 license.
+/// Copyright 2021-2025 Patrick Prémartin under AGPL 3.0 license.
 ///
 /// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 /// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -15,13 +15,8 @@
 ///
 /// ***************************************************************************
 ///
-/// The "Gamolf FMX Game Starter Kit" is both a "technical" example of a video
-/// game developed in Delphi with everything you need inside and a reusable
-/// project template you can customize for your own games.
-///
-/// The files provided are fully functional. Numerous comments are included in
-/// the sources to explain how they work and what you need to copy, override
-/// or customize to make video games without starting from scratch.
+/// A game with bubbles to explode before they explode on their own on the
+/// screen.
 ///
 /// ***************************************************************************
 ///
@@ -29,14 +24,14 @@
 /// Patrick PREMARTIN
 ///
 /// Site :
-/// https://fmxgamestarterkit.developpeur-pascal.fr/
+/// https://soapbubbles.gamolf.fr/
 ///
 /// Project site :
-/// https://github.com/DeveloppeurPascal/Gamolf-FMX-Game-Starter-Kit
+/// https://github.com/DeveloppeurPascal/SoapBubbles
 ///
 /// ***************************************************************************
-/// File last update : 2024-11-28T19:29:22.000+01:00
-/// Signature : 4e1702f4e23f2c9e8993e77658c4e24a2a46b2cd
+/// File last update : 2025-02-02T20:35:46.000+01:00
+/// Signature : f599b2778537d84e299b8543a09a73352c0d4fac
 /// ***************************************************************************
 /// </summary>
 
@@ -67,7 +62,7 @@ const
   /// <summary>
   /// The copyright to show in the About box
   /// </summary>
-  CAboutCopyright = '2021-2025 Patrick Prémartin';
+  CAboutCopyright = '(c) 2021-2025 Patrick Prémartin';
 
   /// <summary>
   /// The website URL of your game (used in the About box)

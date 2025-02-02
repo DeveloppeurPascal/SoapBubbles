@@ -1,9 +1,9 @@
 ﻿/// <summary>
 /// ***************************************************************************
 ///
-/// Gamolf FMX Game Template
+/// Soap Bubbles
 ///
-/// Copyright 2024 Patrick Prémartin under AGPL 3.0 license.
+/// Copyright 2021-2025 Patrick Prémartin under AGPL 3.0 license.
 ///
 /// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 /// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -15,13 +15,8 @@
 ///
 /// ***************************************************************************
 ///
-/// The "Gamolf FMX Game Template" is both a "technical" example of a video
-/// game developed in Delphi with everything you need inside, and a reusable
-/// project template you can customize for your own games.
-///
-/// The files provided are fully functional. Numerous comments are included in
-/// the sources to explain how they work and what you need to copy, override
-/// or customize to make video games without starting from scratch.
+/// A game with bubbles to explode before they explode on their own on the
+/// screen.
 ///
 /// ***************************************************************************
 ///
@@ -29,14 +24,14 @@
 /// Patrick PREMARTIN
 ///
 /// Site :
-/// https://gametemplate.developpeur-pascal.fr/
+/// https://soapbubbles.gamolf.fr/
 ///
 /// Project site :
-/// https://github.com/DeveloppeurPascal/Gamolf-FMX-Game-Template
+/// https://github.com/DeveloppeurPascal/SoapBubbles
 ///
 /// ***************************************************************************
-/// File last update : 2024-08-09T20:35:58.000+02:00
-/// Signature : b224ad6ad4baa80432a9dcbd2ed65ee1dc267399
+/// File last update : 2025-02-02T20:23:56.000+01:00
+/// Signature : 6990ffa9db661ef28d71c3e8e51100c1c5fee2ad
 /// ***************************************************************************
 /// </summary>
 
@@ -111,7 +106,7 @@ Cette application a été développée par Patrick Prémartin en Delphi.
 
 Les images (sprites, icones et éléments d'interface) sont sous licence Adobe Stock.
 
-Ce jeu est développé sous Delphi. Il est basé sur Gamolf FMX Game Starter Kit et Delphi Game Engine pour gérer les fonctionnalités classiques (musiques, sons, paramétres, scores, enchaînement des écrans et interctions avec l'interface utilisateur).
+Ce jeu est développé sous Delphi. Il est basé sur Gamolf FMX Game Starter Kit et Delphi Game Engine pour gérer les fonctionnalités classiques (musiques, sons, paramétres, scores, enchaînement des écrans et interactions avec l'interface utilisateur).
 
 *****************
 * Info éditeur
