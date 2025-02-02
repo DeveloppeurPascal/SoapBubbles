@@ -1,0 +1,182 @@
+inherited HomeScene: THomeScene
+  Size.Width = 814.000000000000000000
+  Size.Height = 489.000000000000000000
+  OnResized = FrameResized
+  object zTitle: TLayout
+    Align = Top
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 774.000000000000000000
+    Size.Height = 75.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    inline tiTitle: TOlfFMXTextImageFrame
+      Align = Center
+      HitTest = False
+      Size.Width = 320.000000000000000000
+      Size.Height = 75.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object VertScrollBox1: TVertScrollBox
+    Align = Center
+    Size.Width = 300.000000000000000000
+    Size.Height = 300.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 284.000000000000000000
+    Viewport.Height = 300.000000000000000000
+    inline btnPlay: TTextButton
+      Align = Top
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 284.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnPlayClick
+      inherited rFocused: TRectangle
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+      inherited rUp: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited rDown: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited Text1: TText
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+    end
+    inline btnQuit: TTextButton
+      Align = Top
+      Margins.Bottom = 10.000000000000000000
+      Position.Y = 300.000000000000000000
+      Size.Width = 284.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnQuitClick
+      inherited rFocused: TRectangle
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+      inherited rUp: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited rDown: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited Text1: TText
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+    end
+    inline btnCredits: TTextButton
+      Align = Top
+      Margins.Bottom = 10.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 284.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnCreditsClick
+      inherited rFocused: TRectangle
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+      inherited rUp: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited rDown: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited Text1: TText
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+    end
+    inline btnHallOfFame: TTextButton
+      Align = Top
+      Margins.Bottom = 10.000000000000000000
+      Position.Y = 180.000000000000000000
+      Size.Width = 284.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnHallOfFameClick
+      inherited rFocused: TRectangle
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+      inherited rUp: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited rDown: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited Text1: TText
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+    end
+    inline btnOptions: TTextButton
+      Align = Top
+      Margins.Bottom = 10.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 284.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnOptionsClick
+      inherited rFocused: TRectangle
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+      inherited rUp: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited rDown: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited Text1: TText
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+    end
+    inline btnContinue: TTextButton
+      Align = Top
+      Margins.Bottom = 10.000000000000000000
+      Position.Y = 60.000000000000000000
+      Size.Width = 284.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnContinueClick
+      inherited rFocused: TRectangle
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+      inherited rUp: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited rDown: TRectangle
+        Size.Width = 280.000000000000000000
+        Size.Height = 46.000000000000000000
+      end
+      inherited Text1: TText
+        Size.Width = 284.000000000000000000
+        Size.Height = 50.000000000000000000
+      end
+    end
+  end
+end
