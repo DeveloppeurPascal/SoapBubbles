@@ -18,7 +18,8 @@ uses
   Olf.FMX.TextImageFrame,
   FMX.Layouts,
   _ButtonsAncestor,
-  cTextButton;
+  cTextButton,
+  FMX.Effects;
 
 type
   THomeScene = class(T__SceneAncestor)
@@ -31,6 +32,7 @@ type
     btnHallOfFame: TTextButton;
     btnOptions: TTextButton;
     btnContinue: TTextButton;
+    ShadowEffect1: TShadowEffect;
     procedure FrameResized(Sender: TObject);
     procedure btnContinueClick(Sender: TObject);
     procedure btnPlayClick(Sender: TObject);
