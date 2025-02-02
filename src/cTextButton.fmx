@@ -1,0 +1,51 @@
+inherited TextButton: TTextButton
+  object rFocused: TRectangle
+    Align = Contents
+    Fill.Kind = None
+    Locked = True
+    HitTest = False
+    Size.Width = 200.000000000000000000
+    Size.Height = 75.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claDeepskyblue
+    Stroke.Thickness = 2.000000000000000000
+  end
+  object rUp: TRectangle
+    Align = Contents
+    Fill.Color = claBlue
+    Locked = True
+    HitTest = False
+    Margins.Left = 2.000000000000000000
+    Margins.Top = 2.000000000000000000
+    Margins.Right = 2.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Size.Width = 196.000000000000000000
+    Size.Height = 71.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object rDown: TRectangle
+    Align = Contents
+    Fill.Color = claMediumblue
+    Locked = True
+    HitTest = False
+    Margins.Left = 2.000000000000000000
+    Margins.Top = 2.000000000000000000
+    Margins.Right = 2.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Size.Width = 196.000000000000000000
+    Size.Height = 71.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object Text1: TText
+    Align = Client
+    Locked = True
+    HitTest = False
+    Size.Width = 200.000000000000000000
+    Size.Height = 75.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'ccc'
+    TextSettings.FontColor = claDarkturquoise
+  end
+end
