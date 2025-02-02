@@ -1,9 +1,9 @@
 ﻿/// <summary>
 /// ***************************************************************************
 ///
-/// Gamolf FMX Game Starter Kit
+/// Soap Bubbles
 ///
-/// Copyright 2024 Patrick Prémartin under AGPL 3.0 license.
+/// Copyright 2021-2025 Patrick Prémartin under AGPL 3.0 license.
 ///
 /// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 /// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -15,13 +15,8 @@
 ///
 /// ***************************************************************************
 ///
-/// The "Gamolf FMX Game Starter Kit" is both a "technical" example of a video
-/// game developed in Delphi with everything you need inside and a reusable
-/// project template you can customize for your own games.
-///
-/// The files provided are fully functional. Numerous comments are included in
-/// the sources to explain how they work and what you need to copy, override
-/// or customize to make video games without starting from scratch.
+/// A game with bubbles to explode before they explode on their own on the
+/// screen.
 ///
 /// ***************************************************************************
 ///
@@ -29,14 +24,14 @@
 /// Patrick PREMARTIN
 ///
 /// Site :
-/// https://fmxgamestarterkit.developpeur-pascal.fr/
+/// https://soapbubbles.gamolf.fr/
 ///
 /// Project site :
-/// https://github.com/DeveloppeurPascal/Gamolf-FMX-Game-Starter-Kit
+/// https://github.com/DeveloppeurPascal/SoapBubbles
 ///
 /// ***************************************************************************
-/// File last update : 2024-08-20T10:35:54.000+02:00
-/// Signature : cadecc1b4d025f19036832d980a0f8be872ace71
+/// File last update : 2025-02-02T20:01:12.000+01:00
+/// Signature : c836a43eb289f873a006d819536093fa7ccd1517
 /// ***************************************************************************
 /// </summary>
 
@@ -95,7 +90,9 @@ uses
   Olf.FMX.TextImageFrame in '..\lib-externes\librairies\src\Olf.FMX.TextImageFrame.pas' {OlfFMXTextImageFrame: TFrame},
   udmAdobeStock_101337396 in '..\_PRIVATE\assets\AdobeStock\AdobeStock_101337396\udmAdobeStock_101337396.pas' {dmAdobeStock_101337396: TDataModule},
   fSceneGame in 'fSceneGame.pas' {GameScene: TFrame},
-  USVGIconesDuJeu in '..\_PRIVATE\assets\AdobeStock\IconesDuJeu\USVGIconesDuJeu.pas';
+  USVGIconesDuJeu in '..\_PRIVATE\assets\AdobeStock\IconesDuJeu\USVGIconesDuJeu.pas',
+  fSceneGameOver in 'fSceneGameOver.pas' {GameOverScene: TFrame},
+  fSceneCredits in 'fSceneCredits.pas' {CreditsScene: TFrame};
 
 {$R *.res}
 
