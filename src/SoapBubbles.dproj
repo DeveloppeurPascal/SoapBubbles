@@ -479,8 +479,8 @@
         <Icns_MainIcns>..\lib-externes\Gamolf-FMX-Game-Starter-Kit\assets\icons\debuggameicon.icns</Icns_MainIcns>
         <UWP_DelphiLogo44>..\lib-externes\Gamolf-FMX-Game-Starter-Kit\assets\icons\debuggameicon-44x44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>..\lib-externes\Gamolf-FMX-Game-Starter-Kit\assets\icons\debuggameicon-150x150.png</UWP_DelphiLogo150>
-        <VerInfo_Build>11</VerInfo_Build>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.11;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=gamolf.fmxgametemplate.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0;Comments=</VerInfo_Keys>
+        <VerInfo_Build>12</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.12;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=gamolf.fmxgametemplate.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
@@ -637,12 +637,10 @@
         </DelphiCompile>
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\fMain.pas">
             <Form>frmMain</Form>
-            <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialog.pas"/>
         <DCCReference Include="..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialogForm.pas">
             <Form>OlfAboutDialogForm</Form>
-            <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="..\lib-externes\librairies\src\u_urlOpen.pas"/>
         <DCCReference Include="uConsts.pas"/>
@@ -652,12 +650,10 @@
         <DCCReference Include="..\lib-externes\librairies\src\Olf.Skia.SVGToBitmap.pas"/>
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\uDMAboutBox.pas">
             <Form>AboutBox</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="uDMAboutBoxLogoStorrage.pas">
             <Form>dmAboutBoxLogo</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="uTxtAboutLicense.pas"/>
@@ -678,7 +674,6 @@
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\uConfig.pas"/>
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\_ScenesAncestor.pas">
             <Form>__SceneAncestor</Form>
-            <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\uScene.pas"/>
@@ -691,24 +686,48 @@
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\assets\kenney_nl\InputPrompts\USVGInputPrompts.pas"/>
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\uDMGameControllerCenter.pas">
             <Form>DMGameControllerCenter</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\uSVGBitmapManager_InputPrompts.pas"/>
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\uDMHelpBarManager.pas">
             <Form>HelpBarManager</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\_ButtonsAncestor.pas">
             <Form>__ButtonAncestor</Form>
-            <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
         <DCCReference Include="..\_PRIVATE\src\uSceneBackground.pas">
             <Form>SceneBackground</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="uSpriteCercle.pas">
+            <Form>SpriteCercle</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\_PRIVATE\src\uSpriteBubble.pas">
+            <Form>SpriteBubble</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="cTextButton.pas">
+            <Form>TextButton</Form>
             <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="fSceneHome.pas">
+            <Form>HomeScene</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\lib-externes\librairies\src\Olf.FMX.TextImageFrame.pas">
+            <Form>OlfFMXTextImageFrame</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\_PRIVATE\assets\AdobeStock\AdobeStock_101337396\udmAdobeStock_101337396.pas">
+            <Form>dmAdobeStock_101337396</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
@@ -822,11 +841,46 @@
                 <DeployFile LocalName="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\assets\icons\debuggameicon-150x150.png" Configuration="Debug" Class="UWP_DelphiLogo150"/>
                 <DeployFile LocalName="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\assets\icons\debuggameicon-44x44.png" Configuration="Debug" Class="UWP_DelphiLogo44"/>
                 <DeployFile LocalName="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\assets\icons\debuggameicon.icns" Configuration="Debug" Class="ProjectOSXResource"/>
+                <DeployFile LocalName="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\assets\icons\debuggameicon.icns" Configuration="Debug" Class="ProjectOSXResource">
+                    <Platform Name="OSXARM64">
+                        <RemoteName>SoapBubbles.icns</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="OSXARM64\Debug\GamolfFMXGameStarterKit.dSYM" Configuration="Debug" Class="ProjectOSXDebug"/>
                 <DeployFile LocalName="OSXARM64\Debug\GamolfFMXGameStarterKit.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements"/>
                 <DeployFile LocalName="OSXARM64\Debug\GamolfFMXGameStarterKit.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList"/>
                 <DeployFile LocalName="OSXARM64\Debug\GamolfFMXGameStarterKit" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="OSXARM64\Debug\SoapBubbles.dSYM" Configuration="Debug" Class="ProjectOSXDebug">
+                    <Platform Name="OSXARM64">
+                        <RemoteName>SoapBubbles</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSXARM64\Debug\SoapBubbles.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements">
+                    <Platform Name="OSXARM64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSXARM64\Debug\SoapBubbles.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList">
+                    <Platform Name="OSXARM64">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSXARM64\Debug\SoapBubbles" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="OSXARM64">
+                        <RemoteName>SoapBubbles</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win32\Debug\GamolfFMXGameStarterKit.exe" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="Win32\Debug\SoapBubbles.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>SoapBubbles.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="iOSSimulator">
                         <Operation>1</Operation>

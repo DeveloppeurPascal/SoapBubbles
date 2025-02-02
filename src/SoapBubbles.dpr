@@ -46,6 +46,7 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   FMX.Skia,
+  FMX.Types,
   fMain in '..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\fMain.pas' {frmMain},
   Olf.FMX.AboutDialog in '..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialog.pas',
   Olf.FMX.AboutDialogForm in '..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialogForm.pas' {OlfAboutDialogForm},
@@ -86,14 +87,25 @@ uses
   uSVGBitmapManager_InputPrompts in '..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\uSVGBitmapManager_InputPrompts.pas',
   uDMHelpBarManager in '..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\uDMHelpBarManager.pas' {HelpBarManager: TDataModule},
   _ButtonsAncestor in '..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\_ButtonsAncestor.pas' {__ButtonAncestor: TFrame},
-  uSceneBackground in '..\_PRIVATE\src\uSceneBackground.pas' {SceneBackground: TFrame};
+  uSceneBackground in '..\_PRIVATE\src\uSceneBackground.pas' {SceneBackground: TFrame},
+  uSpriteCercle in 'uSpriteCercle.pas' {SpriteCercle: TFrame},
+  uSpriteBubble in '..\_PRIVATE\src\uSpriteBubble.pas' {SpriteBubble: TFrame},
+  cTextButton in 'cTextButton.pas' {TextButton: TFrame},
+  fSceneHome in 'fSceneHome.pas' {HomeScene: TFrame},
+  Olf.FMX.TextImageFrame in '..\lib-externes\librairies\src\Olf.FMX.TextImageFrame.pas' {OlfFMXTextImageFrame: TFrame},
+  udmAdobeStock_101337396 in '..\_PRIVATE\assets\AdobeStock\AdobeStock_101337396\udmAdobeStock_101337396.pas' {dmAdobeStock_101337396: TDataModule};
 
 {$R *.res}
 
 begin
   GlobalUseSkia := True;
+{$IF Defined(MACOS)}
+GlobalUseMetal := true;
+{$ENDIF}
+  GlobalUseSkiaRasterWhenAvailable := false;
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
   Application.CreateForm(TDMGameControllerCenter, DMGameControllerCenter);
+  Application.CreateForm(TdmAdobeStock_101337396, dmAdobeStock_101337396);
   Application.Run;
 end.
