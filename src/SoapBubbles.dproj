@@ -688,7 +688,7 @@
             <Form>DMGameControllerCenter</Form>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\uSVGBitmapManager_InputPrompts.pas"/>
+        <DCCReference Include="uSVGBitmapManager_InputPrompts.pas"/>
         <DCCReference Include="..\lib-externes\Gamolf-FMX-Game-Starter-Kit\src\uDMHelpBarManager.pas">
             <Form>HelpBarManager</Form>
             <DesignClass>TDataModule</DesignClass>
@@ -729,6 +729,12 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
+        <DCCReference Include="fSceneGame.pas">
+            <Form>GameScene</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\_PRIVATE\assets\AdobeStock\IconesDuJeu\USVGIconesDuJeu.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
